@@ -7,7 +7,7 @@ import math
 from sort import *
  
 cap = cv2.VideoCapture("VIDS/cars.mp4") 
-model=YOLO("yolov10n.pt")
+model=YOLO("yolov8n.pt")
 mask = cv2.imread("IMGS/cars.png")
  
 t=Sort(max_age=20,min_hits=3,iou_threshold=0.3)

@@ -6,9 +6,9 @@ import cvzone
 import math
 from sort import *
  
-cap = cv2.VideoCapture("C-V/YOLO/VIDS/people.mp4") 
-model=YOLO("C-V/YOLO/yolov10n.pt")
-mask = cv2.imread("C-V/YOLO/IMGS/stairs.png")
+cap = cv2.VideoCapture("VIDS/people.mp4") 
+model=YOLO("yolov8n.pt")
+mask = cv2.imread("IMGS/stairs.png")
  
 t=Sort(max_age=20,min_hits=3,iou_threshold=0.3)
 th=[100,200,350,600,500,800]

@@ -1,6 +1,6 @@
 import numpy as np
 from ultralytics import YOLO
-from res import*
+from res import *
 import cv2
 import cvzone
 import math
@@ -52,4 +52,4 @@ while True:
     cvzone.putTextRect(img,f'People Going Up: {str(len(Up))}',(600,50),scale=3,colorR=(0,0,0),colorT=(255,255,255),thickness=3)
     cvzone.putTextRect(img,f'People Going Down: {str(len(Down))}',(600,130),scale=3,colorR=(0,0,0),colorT=(255,255,255),thickness=3)
     cv2.imshow("Image", img)
-    cv2.waitKey(1)
+    #cv2.waitKey(1)
